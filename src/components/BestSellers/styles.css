@@ -1,0 +1,57 @@
+.best-sellers {
+  background-color: transparent;
+  background-image: linear-gradient(270deg, #BAA674 0%, #ECE0D5 100%);
+  overflow: hidden;
+  white-space: nowrap;
+  border-radius: 10px;
+  width: 98%;
+  position: relative;
+  margin-top: 20px;
+}
+
+/* .best-sellers-title {
+  margin-bottom: 8px;
+} */
+
+.logo-container {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+}
+
+.logo-item {
+  display: inline-block;
+  margin: 0 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.logo-container img {
+  height: 115px;
+  width: 115px;
+  object-fit: cover;
+}
+
+.logo-item h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.logo-item:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.stop-scroll {
+  animation-play-state: paused;
+}
