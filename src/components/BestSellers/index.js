@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import VectorModal from '../VectorModal';
+import VectorModal from '../VectorsModals';
 import './styles.css';
 
 const BestSellers = () => {
     const logos = [
         {
             src: '/images/vectors/pizza-v.png',
-            title: 'Pizzas Géantes',
+            title: 'Pizza XXL',
             description: 'Délicieuse pizza faite maison.',
             price: '10€',
         },
@@ -21,6 +21,12 @@ const BestSellers = () => {
             title: 'Patigot de la Mer',
             description: 'Notre spécialité de fruits de mer.',
             price: '15€',
+        },
+        {
+            src: '/images/vectors/calzone-v.png',
+            title: 'Calzone Géant',
+            description: 'Un calzone triple XL pour les gros mangeurs !',
+            price: '18€',
         },
     ];
 

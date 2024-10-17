@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { AlignJustify } from 'lucide-react';
+import Header from '../../components/Header';
+import { Link } from 'react-router-dom';
 import BestSellers from '../../components/BestSellers';
 import './styles.css';
 
@@ -26,18 +27,7 @@ const Home = () => {
 
     return (
         <div className={`home ${isMenuOpen ? 'darken' : ''}`}>
-            <header className="header">
-                <div className="header-container">
-                    <img
-                        src="/images/logoLMB.png"
-                        alt="Logo La Maison du Bon"
-                        className="logo"
-                        onClick={() => window.location.reload()}
-                    />
-                    <h1 className="header-title">La MaiSoN du BoN</h1>
-                    <AlignJustify className="menu-icon" onClick={toggleMenu} aria-expanded={isMenuOpen ? "true" : "false"} />
-                </div>
-            </header>
+            <Header toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
 
             <h2>Bienvenue à La Maison du Bon</h2>
             <p>
@@ -59,10 +49,10 @@ const Home = () => {
                 <button className="close-button" onClick={toggleMenu}>&times;</button>
                 <div className="sidebar-content">
                     <ul>
-                        <li><a href="#home">Accueil</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#rooms">Découvrez nous !</a></li>
-                        <li><a href="#about">A propos</a></li>
+                        <li><Link to="/">Accueil</Link></li>
+                        <li><Link to="/menu">Menu</Link></li>
+                        <li><Link to="/rooms">Découvrez nous !</Link></li>
+                        <li><Link to="/about">À propos</Link></li>
                     </ul>
                 </div>
             </div>

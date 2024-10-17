@@ -4,6 +4,9 @@ import Home from './modules/Home';
 import About from './modules/About';
 import Rooms from './modules/Rooms';
 import Menu from './modules/Menu';
+import { PizzasMenu } from './components/PizzasMenu';
+// import RestaurantMenu from './components/RestaurantMenu';
+import NotFound from './modules/NotFound';
 
 import './App.css';
 
@@ -14,8 +17,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/menu/pizzas" element={<PizzasMenu />} />
+          {/* <Route path="/menu/restaurant" element={<RestaurantMenu />} /> */}
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>

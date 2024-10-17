@@ -11,4 +11,6 @@ logos : basil - chorizo - oinion - pizza - delivry
 
 
 
-A revoir : Taille logo patigot-v - Arrêt du défilement au survol "Nos meilleures ventes" -
+A revoir : menu-icon à centrer - Arrêt du défilement au survol "Nos meilleures ventes"
+
+Revoir les polices d'écriture

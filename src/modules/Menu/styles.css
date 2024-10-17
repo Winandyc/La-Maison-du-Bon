@@ -1,11 +1,26 @@
-.menu {
-    padding: 20px;
-    background-color: #fff7e6;
-  }
+.menu-container {
+  text-align: center;
+}
 
-  .menu-item {
-    border: 1px solid #d19c58;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px 0;
-  }
+.menu-cards {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.menu-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 150px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu-card:hover {
+  background-color: #e2e2e2;
+}
