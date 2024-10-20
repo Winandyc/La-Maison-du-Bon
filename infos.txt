@@ -11,6 +11,15 @@ logos : basil - chorizo - oinion - pizza - delivry
 
 
 
-A revoir : menu-icon à centrer - Arrêt du défilement au survol "Nos meilleures ventes"
-
+A revoir : "Nos meilleures ventes"
 Revoir les polices d'écriture
+Revoir taille logo patigot-v
+
+Rendre la partie "home-content1" responsive
+
+
+
+
+
+
+-Menu burger grands écrans : à la place du titre - puis menu burger pour les moyens écrans

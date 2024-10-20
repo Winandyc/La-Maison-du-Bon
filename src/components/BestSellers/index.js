@@ -1,32 +1,79 @@
 import React, { useState } from 'react';
-import VectorModal from '../VectorsModals';
+import LogoModal from '../LogosModals';
+
 import './styles.css';
 
 const BestSellers = () => {
     const logos = [
         {
-            src: '/images/vectors/pizza-v.png',
+            src: '/images/logos/pizza-v.png',
+            photoSrc: [
+                '/images/food/pizza.jpg',
+                '/images/food/pizza2.jpg',
+                '/images/food/pizza3.jpg',
+                '/images/food/pizza4.jpg'
+            ],
             title: 'Pizza XXL',
-            description: 'Délicieuse pizza faite maison.',
-            price: '10€',
+            description: 'La fameuse pizza traditionnelle de La Maison du Bon',
+            price: '14,90€',
         },
         {
-            src: '/images/vectors/hamburger-v.png',
+            src: '/images/logos/hamburger-v.png',
+            photoSrc: [
+                '/images/food/prestige.jpg',
+                '/images/food/prestige2.jpg'
+
+            ],
             title: 'Hamburger Prestige',
-            description: 'Un hamburger juteux et savoureux.',
-            price: '8€',
+            description: 'Un hamburger juteux et savoureux',
+            price: '13€',
         },
         {
-            src: '/images/vectors/patigot-v.png',
+            src: '/images/logos/patigot-v.png',
+            photoSrc: [
+                '/images/food/patigot.jpg',
+                '/images/food/patigot2.jpg'
+            ],
             title: 'Patigot de la Mer',
-            description: 'Notre spécialité de fruits de mer.',
-            price: '15€',
+            description: (
+                <>
+                    Notre spécialité de fruits de mer à base de pommes de terre, filets de colins, filets de cabillaud, séches, moules & gambas.
+                    <br />
+                    Le tout arrosé d'un aïoli spécial chaud.
+                </>
+            ),
+            price: '15,50€',
         },
         {
-            src: '/images/vectors/calzone-v.png',
+            src: '/images/logos/calzone-v.png',
+            photoSrc: [
+                '/images/food/calzone.jpg',
+                '/images/food/calzone2.jpg',
+            ],
             title: 'Calzone Géant',
-            description: 'Un calzone triple XL pour les gros mangeurs !',
-            price: '18€',
+            description: 'Un calzone triple XL confectionné selon vos gouts',
+            price: '18,50€',
+        },
+        {
+            src: '/images/logos/salade-v.png',
+            photoSrc: [
+                '/images/food/salade.jpg',
+                '/images/food/salade2.jpg',
+                '/images/food/salade3.jpg'
+            ],
+            title: 'Salade Repas',
+            description: 'Une salade concoctée par vos soins',
+            price: '13,90€',
+        },
+        {
+            src: '/images/logos/pizzawok-v.png',
+            photoSrc: [
+                '/images/food/pizzawok.jpg',
+                '/images/food/pizzawok2.jpg'
+            ],
+            title: 'Pizza Wok XXL',
+            description: 'Une pizza XXL à personnaliser entièrement',
+            price: '18,50€',
         },
     ];
 
@@ -45,16 +92,17 @@ const BestSellers = () => {
 
     return (
         <div className="best-sellers">
-            <h2 className="best-sellers-title">Nos meilleurs ventes</h2>
+            <h2 className="best-sellers-title">Nos meilleures ventes</h2>
             <div className="logo-container">
-                {logos.map((logo, index) => (
+                {/* Dupliquation les logos pour créer un défilement continu */}
+                {[...logos, ...logos].map((logo, index) => (
                     <div className="logo-item" key={index} onClick={() => openModal(logo)}>
                         <img src={logo.src} alt={logo.title} />
-                        <h3>{logo.title}</h3>
+                        <h2>{logo.title}</h2>
                     </div>
                 ))}
             </div>
-            <VectorModal isOpen={isModalOpen} onClose={closeModal} logo={selectedLogo} />
+            <LogoModal isOpen={isModalOpen} onClose={closeModal} logo={selectedLogo} />
         </div>
     );
 };
