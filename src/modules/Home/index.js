@@ -20,7 +20,7 @@ const Home = () => {
             <div className="home-content1">
                 {/* Zone gauche avec logo */}
                 <div className="left-section">
-                    <img src="/images/logoLMB-w.png" alt="Restaurant Logo" className="logo-intro" />
+                    <img src={`${process.env.PUBLIC_URL}/images/logoLMB-w.png`} alt="Restaurant Logo" className="logo-intro" />
                     <p>
                         <strong>Pizzas traditionnelles - Viande Angus Irlandaise de qualité supérieure</strong>
                     </p>
@@ -42,7 +42,7 @@ const Home = () => {
                 {/* Zone droite avec la vidéo */}
                 <div className="right-section">
                     <div className="video-container">
-                        <video src="/videos/introducting.mp4" controls className="video" />
+                        <video src={`${process.env.PUBLIC_URL}/videos/introducting.mp4`} controls className="video" />
                     </div>
                 </div>
             </div>

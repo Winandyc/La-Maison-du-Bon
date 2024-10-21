@@ -9,7 +9,7 @@ const Header = ({ toggleMenu, isMenuOpen }) => {
         <header className="header">
             <div className="header-container">
                 <img
-                    src="/images/logoLMB-w.png"
+                    src={`${process.env.PUBLIC_URL}/images/logoLMB-w.png`}
                     alt="Logo La Maison du Bon"
                     className="logo"
                     onClick={() => window.location.reload()}
