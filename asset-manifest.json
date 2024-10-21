@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/La-Maison-du-Bon/static/css/main.ac92c52c.css",
-    "main.js": "/La-Maison-du-Bon/static/js/main.c6aeeb38.js",
-    "static/js/453.ba8755d6.chunk.js": "/La-Maison-du-Bon/static/js/453.ba8755d6.chunk.js",
-    "static/media/AlphaWood.ttf": "/La-Maison-du-Bon/static/media/AlphaWood.dc3c37d2590732428075.ttf",
-    "static/media/duality.otf": "/La-Maison-du-Bon/static/media/duality.583c2fc6a1ec62605242.otf",
-    "index.html": "/La-Maison-du-Bon/index.html",
-    "main.ac92c52c.css.map": "/La-Maison-du-Bon/static/css/main.ac92c52c.css.map",
-    "main.c6aeeb38.js.map": "/La-Maison-du-Bon/static/js/main.c6aeeb38.js.map",
-    "453.ba8755d6.chunk.js.map": "/La-Maison-du-Bon/static/js/453.ba8755d6.chunk.js.map"
+    "main.css": "/la-maison-du-bon/static/css/main.f8e182ed.css",
+    "main.js": "/la-maison-du-bon/static/js/main.3de6770e.js",
+    "static/js/453.ba8755d6.chunk.js": "/la-maison-du-bon/static/js/453.ba8755d6.chunk.js",
+    "static/media/AlphaWood.ttf": "/la-maison-du-bon/static/media/AlphaWood.dc3c37d2590732428075.ttf",
+    "static/media/duality.otf": "/la-maison-du-bon/static/media/duality.583c2fc6a1ec62605242.otf",
+    "index.html": "/la-maison-du-bon/index.html",
+    "main.f8e182ed.css.map": "/la-maison-du-bon/static/css/main.f8e182ed.css.map",
+    "main.3de6770e.js.map": "/la-maison-du-bon/static/js/main.3de6770e.js.map",
+    "453.ba8755d6.chunk.js.map": "/la-maison-du-bon/static/js/453.ba8755d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac92c52c.css",
-    "static/js/main.c6aeeb38.js"
+    "static/css/main.f8e182ed.css",
+    "static/js/main.3de6770e.js"
   ]
 }
