@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from '../../components/Header';
 import BurgerMenu from '../../components/BurgerMenu';
 import BestSellers from '../../components/BestSellers';
+import News from '../../components/News';
 import { Headset } from 'lucide-react';
 
 import './styles.css';
@@ -63,6 +64,7 @@ const Home = () => {
             </div>
 
             <BestSellers />
+            <News />
 
             {/* Utilisation du composant BurgerMenu */}
             <BurgerMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />

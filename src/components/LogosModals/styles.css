@@ -1,4 +1,8 @@
 @import '../../variables.css';
+@font-face {
+    font-family: 'AlphaWood', 'duality';
+    src: url('../../fonts/duality.otf') format('opentype');
+}
 
 .modal-overlay {
     position: fixed;
@@ -28,7 +32,7 @@
 }
 
 .modal-content h2 {
-    font-family: 'Satisfy', cursive;
+    font-family: 'duality', cursive;
     color: black;
 }
 
@@ -47,17 +51,18 @@
 .modal-text {
     position: relative;
     top: 7dvh;
-    font-family: "Caveat", cursive;
-    font-size: 26px;
+    font-family: 'duality', cursive;
+    font-size: 17px;
     font-weight: bolder;
 }
 
 .modal-text.patigot {
-    top: 2dvh;
+    font-size: 14px;
+    top: 4dvh;
 }
 
 .modal-price {
-    font-family: 'Satisfy', cursive;
+    font-family: 'duality', cursive;
     font-size: 1.5rem;
     font-weight: bold;
     color: black;
