@@ -30,11 +30,14 @@ const Menu = () => {
             <Header toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
             <h1>Nos Menus</h1>
             <div className="menu-cards">
-                <Link to="/menu/pizzas" className="menu-card">
+                <Link to="/menu/pizzeria" className="menu-card">
                     <h2>Pizzeria</h2>
                 </Link>
                 <Link to="/menu/restaurant" className="menu-card">
                     <h2>Restaurant</h2>
+                </Link>
+                <Link to="/menu/specialties" className="menu-card">
+                    <h2>Nos spécialités</h2>
                 </Link>
             </div>
 

@@ -2,8 +2,6 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
 }
 
 .mentions-legales {
@@ -23,7 +21,7 @@ body {
     background: none;
     color: black;
     border: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 
@@ -44,8 +42,8 @@ body {
 .section h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
-    color: #B8A76E;
-    border-bottom: 2px solid #B8A76E;
+    color: var(--third-color);
+    border-bottom: 2px solid var(--third-color);
     padding-bottom: 5px;
 }
 
@@ -56,7 +54,7 @@ body {
 }
 
 .section a {
-    color: #B8A76E;
+    color: var(--third-color);
     text-decoration: none;
 }
 

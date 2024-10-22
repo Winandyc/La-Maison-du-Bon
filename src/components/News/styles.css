@@ -33,7 +33,7 @@
 .poster-title {
     font-family: 'duality', cursive;
     font-size: 1.5em;
-    color: #B8A76E;
+    color: var(--third-color);
     text-align: left;
 }
 
@@ -41,7 +41,7 @@
     font-family: 'duality', cursive;
     font-size: 1.5em;
     padding-top: 30px;
-    color: #B8A76E;
+    color: var(--third-color);
     text-align: left;
 }
 
@@ -65,7 +65,7 @@
 .poster-description li .price {
     display: grid;
     align-self: flex-end;
-    color: #B8A76E;
+    color: var(--third-color);
 }
 
 .poster-description li::after {
@@ -79,7 +79,7 @@
 }
 
 .ingredient-description {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     margin-top: 5px;
     font-family: 'duality';
     font-weight: normal;

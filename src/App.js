@@ -4,7 +4,7 @@ import Home from './modules/Home';
 import About from './modules/About';
 import Rooms from './modules/Rooms';
 import Menu from './modules/Menu';
-import { PizzasMenu } from './components/PizzasMenu';
+import { Pizzeria } from './components/Pizzeria';
 import NotFound from './modules/NotFound';
 import LegalesNotices from './components/LegalesNotices';
 import Footer from './components/Footer';
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
-          <Route path="/menu/pizzas" element={<PizzasMenu />} />
+          <Route path="/menu/pizzeria" element={<Pizzeria />} />
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/about" element={<About />} />
           <Route path="/LegalesNotices" element={<LegalesNotices />} />
